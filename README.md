@@ -107,10 +107,11 @@ The following endpoints are available for managing authors in the library system
    - **Method:** `POST`
    - **Description:** Deletes all authors in the system.
    - **Response:** None.
-   - 
+
+## Book
+
 ### Base URL
 `/library/book/`
-### Book
 
 #### Get All Books  
 **URL**: `/get-all-books`  
@@ -174,11 +175,11 @@ The following endpoints are available for managing authors in the library system
 **Description**: Deletes all books in the system.  
 **Response**: None.
 
----
+## Category
+
 ### Base URL
 `/library/category/`
 
-### Category
 
 #### Get All Categories  
 **URL**: `/get-all-categories`  
@@ -234,12 +235,12 @@ The following endpoints are available for managing authors in the library system
 **Description**: Deletes all categories in the system.  
 **Response**: None.
 
----
+
+## Publisher
 
 ### Base URL
 `/library/publisher/`
 
-### Publisher
 
 #### Get All Publishers  
 **URL**: `/get-all-publishers`  
