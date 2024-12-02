@@ -55,3 +55,87 @@ Key dependencies used in this project are:
 - **Lombok**: For reducing boilerplate code.
 - **Spring Boot DevTools**: For enhancing the development experience.
 
+  ## API Endpoints
+
+The following endpoints are available for managing authors in the library system:
+
+### Base URL
+`/library/author`
+
+### Endpoints
+
+1. **Get All Authors**
+   - **URL:** `/get-all-authors`
+   - **Method:** `GET`
+   - **Description:** Retrieves a list of all authors in the system.
+   - **Response:** Returns a JSON array of `Author` objects.
+
+2. **Get Author by ID**
+   - **URL:** `/get-author-by-id`
+   - **Method:** `GET`
+   - **Description:** Retrieves the details of an author by their ID.
+   - **Query Parameter:**
+     - `id` (integer): The ID of the author.
+   - **Response:** Returns a JSON object representing the `Author`.
+
+3. **Add a New Author**
+   - **URL:** `/add-author`
+   - **Method:** `POST`
+   - **Description:** Adds a new author to the system.
+   - **Request Body:**
+     ```json
+     {
+       "id": 0,
+       "name": "Author Name",
+       "books": []
+     }
+     ```
+     - Replace `id` and `name` with actual values.
+   - **Response:** Returns the created `Author` object.
+
+4. **Update an Author**
+   - **URL:** `/update-author`
+   - **Method:** `POST`
+   - **Description:** Updates an existing author's details.
+   - **Request Body:**
+     ```json
+     {
+       "id": 1,
+       "name": "Updated Author Name",
+       "books": []
+     }
+     ```
+     - Replace `id` and `name` with actual values.
+   - **Response:** Returns the updated `Author` object.
+
+5. **Delete an Author by ID**
+   - **URL:** `/delete-author-by-id`
+   - **Method:** `POST`
+   - **Description:** Deletes an author by their ID.
+   - **Query Parameter:**
+     - `id` (integer): The ID of the author to be deleted.
+   - **Response:** None.
+
+6. **Delete All Authors**
+   - **URL:** `/delete-all-authors`
+   - **Method:** `POST`
+   - **Description:** Deletes all authors in the system.
+   - **Response:** None.
+
+### Data Model
+
+**Author Object:**
+```json
+{
+  "id": 1,
+  "name": "Author Name",
+  "books": [
+    {
+      "id": 101,
+      "title": "Book Title",
+      "publishedYear": 2023
+    }
+  ]
+}
+
+
