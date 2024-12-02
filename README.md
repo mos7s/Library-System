@@ -23,8 +23,8 @@
 
 Ensure the following are installed:
 
-- Java 17 or higher
-- Maven 3.6+ or a compatible build system
+- Java 17 
+- Maven 3.6
 - PostgreSQL database
 
 1. Create a PostgreSQL database.
