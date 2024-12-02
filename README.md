@@ -108,7 +108,7 @@ The following endpoints are available for managing authors in the library system
    - **Description:** Deletes all authors in the system.
    - **Response:** None.
    - 
-## Base URL
+### Base URL
 `/library/book/`
 ### Book
 
@@ -175,7 +175,7 @@ The following endpoints are available for managing authors in the library system
 **Response**: None.
 
 ---
-## Base URL
+### Base URL
 `/library/category/`
 
 ### Category
@@ -236,7 +236,7 @@ The following endpoints are available for managing authors in the library system
 
 ---
 
-## Base URL
+### Base URL
 `/library/publisher/`
 
 ### Publisher
