@@ -23,8 +23,7 @@ PostgreSQL database
 Setup Instructions
 Clone the Repository
 
-bash
-Copy code
+# bash
 git clone <repository-url>
 cd IbrarySystem
 Configure the Database
