@@ -82,14 +82,7 @@ The following endpoints are available for managing authors in the library system
    - **URL:** `/add-author`
    - **Method:** `POST`
    - **Description:** Adds a new author to the system.
-   - **Request Body:**
-     ```json
-     {
-       "id": 0,
-       "name": "Author Name",
-       "books": []
-     }
-     ```
+
      - Replace `id` and `name` with actual values.
    - **Response:** Returns the created `Author` object.
 
@@ -97,14 +90,6 @@ The following endpoints are available for managing authors in the library system
    - **URL:** `/update-author`
    - **Method:** `POST`
    - **Description:** Updates an existing author's details.
-   - **Request Body:**
-     ```json
-     {
-       "id": 1,
-       "name": "Updated Author Name",
-       "books": []
-     }
-     ```
      - Replace `id` and `name` with actual values.
    - **Response:** Returns the updated `Author` object.
 
@@ -123,19 +108,5 @@ The following endpoints are available for managing authors in the library system
    - **Response:** None.
 
 ### Data Model
-
-**Author Object:**
-```json
-{
-  "id": 1,
-  "name": "Author Name",
-  "books": [
-    {
-      "id": 101,
-      "title": "Book Title",
-      "publishedYear": 2023
-    }
-  ]
-}
 
 
