@@ -59,6 +59,8 @@ Key dependencies used in this project are:
 
 The following endpoints are available for managing authors in the library system:
 
+### Author
+
 ### Base URL
 `/library/author`
 
@@ -82,15 +84,14 @@ The following endpoints are available for managing authors in the library system
    - **URL:** `/add-author`
    - **Method:** `POST`
    - **Description:** Adds a new author to the system.
-
-     - Replace `id` and `name` with actual values.
+     - Add a `name` with actual values.
    - **Response:** Returns the created `Author` object.
 
 4. **Update an Author**
    - **URL:** `/update-author`
    - **Method:** `POST`
    - **Description:** Updates an existing author's details.
-     - Replace `id` and `name` with actual values.
+     - Replace `name` with actual values.
    - **Response:** Returns the updated `Author` object.
 
 5. **Delete an Author by ID**
@@ -106,14 +107,10 @@ The following endpoints are available for managing authors in the library system
    - **Method:** `POST`
    - **Description:** Deletes all authors in the system.
    - **Response:** None.
-
-# Library Management System - REST API
-
-This project provides a RESTful API for managing a library system. The API supports managing books, categories, and publishers.
-
-## Endpoints
-
-### BookController
+   - 
+##Base URL
+`/library/book/`
+### Book
 
 #### Get All Books  
 **URL**: `/library/book/get-all-books`  
@@ -178,8 +175,10 @@ This project provides a RESTful API for managing a library system. The API suppo
 **Response**: None.
 
 ---
+##Base URL
+`/library/category/`
 
-### CatgController
+### Category
 
 #### Get All Categories  
 **URL**: `/library/category/get-all-categories`  
@@ -237,7 +236,10 @@ This project provides a RESTful API for managing a library system. The API suppo
 
 ---
 
-### PublisherController
+##Base URL
+`/library/publisher/`
+
+### Publisher
 
 #### Get All Publishers  
 **URL**: `/library/publisher/get-all-publishers`  
@@ -295,19 +297,8 @@ This project provides a RESTful API for managing a library system. The API suppo
 
 ---
 
-## Technologies Used
-
-- **Spring Boot**: Framework for building RESTful APIs.
-- **Java**: Programming language.
-- **Maven**: Build automation tool.
-
----
-
-## Setup Instructions
-
-1. Clone the repository:
-   ```bash
-   git clone <repository_url>
-
-
-
+#Future Enhancements
+##-Authentication and authorization for API endpoints.
+##-Improved validation for request payloads.
+##-Pagination for retrieving large data sets.
+##-Enhanced error handling with custom exception messages.
