@@ -107,6 +107,207 @@ The following endpoints are available for managing authors in the library system
    - **Description:** Deletes all authors in the system.
    - **Response:** None.
 
-### Data Model
+# Library Management System - REST API
+
+This project provides a RESTful API for managing a library system. The API supports managing books, categories, and publishers.
+
+## Endpoints
+
+### BookController
+
+#### Get All Books  
+**URL**: `/library/book/get-all-books`  
+**Method**: `GET`  
+**Description**: Retrieves a list of all books in the system.  
+**Response**: Returns a JSON array of Book objects.
+
+---
+
+#### Get Book by ID  
+**URL**: `/library/book/get-book-by-id`  
+**Method**: `GET`  
+**Description**: Retrieves the details of a book by its ID.  
+**Query Parameter**:  
+- `id` (integer): The ID of the book.  
+**Response**: Returns a JSON object representing the Book.
+
+---
+
+#### Add a New Book  
+**URL**: `/library/book/add-book`  
+**Method**: `POST`  
+**Description**: Adds a new book to the system.  
+**Request Body**:  
+- A `Book` object containing the book's details.  
+**Query Parameters**:  
+- `authorId` (integer): The ID of the author.  
+- `catgId` (integer): The ID of the category.  
+- `publisherId` (integer): The ID of the publisher.  
+**Response**: Returns the created Book object.
+
+---
+
+#### Update a Book  
+**URL**: `/library/book/update-book`  
+**Method**: `POST`  
+**Description**: Updates an existing book's details.  
+**Request Body**:  
+- A `Book` object containing the updated details.  
+**Query Parameters**:  
+- `authorId` (integer): The ID of the author.  
+- `catgId` (integer): The ID of the category.  
+- `publisherId` (integer): The ID of the publisher.  
+**Response**: Returns the updated Book object.
+
+---
+
+#### Delete a Book by ID  
+**URL**: `/library/book/delete-book-by-id`  
+**Method**: `POST`  
+**Description**: Deletes a book by its ID.  
+**Query Parameter**:  
+- `id` (integer): The ID of the book to be deleted.  
+**Response**: None.
+
+---
+
+#### Delete All Books  
+**URL**: `/library/book/delete-all-book`  
+**Method**: `POST`  
+**Description**: Deletes all books in the system.  
+**Response**: None.
+
+---
+
+### CatgController
+
+#### Get All Categories  
+**URL**: `/library/category/get-all-categories`  
+**Method**: `GET`  
+**Description**: Retrieves a list of all categories in the system.  
+**Response**: Returns a JSON array of Category objects.
+
+---
+
+#### Get Category by ID  
+**URL**: `/library/category/get-category-by-id`  
+**Method**: `GET`  
+**Description**: Retrieves the details of a category by its ID.  
+**Query Parameter**:  
+- `id` (integer): The ID of the category.  
+**Response**: Returns a JSON object representing the Category.
+
+---
+
+#### Add a New Category  
+**URL**: `/library/category/add-category`  
+**Method**: `POST`  
+**Description**: Adds a new category to the system.  
+**Request Body**:  
+- A `Category` object containing the category's details.  
+**Response**: Returns the created Category object.
+
+---
+
+#### Update a Category  
+**URL**: `/library/category/update-category`  
+**Method**: `POST`  
+**Description**: Updates an existing category's details.  
+**Request Body**:  
+- A `Category` object containing the updated details.  
+**Response**: Returns the updated Category object.
+
+---
+
+#### Delete a Category by ID  
+**URL**: `/library/category/delete-category-by-id`  
+**Method**: `POST`  
+**Description**: Deletes a category by its ID.  
+**Query Parameter**:  
+- `id` (integer): The ID of the category to be deleted.  
+**Response**: None.
+
+---
+
+#### Delete All Categories  
+**URL**: `/library/category/delete-all-categories`  
+**Method**: `POST`  
+**Description**: Deletes all categories in the system.  
+**Response**: None.
+
+---
+
+### PublisherController
+
+#### Get All Publishers  
+**URL**: `/library/publisher/get-all-publishers`  
+**Method**: `GET`  
+**Description**: Retrieves a list of all publishers in the system.  
+**Response**: Returns a JSON array of Publisher objects.
+
+---
+
+#### Get Publisher by ID  
+**URL**: `/library/publisher/get-publisher-by-id`  
+**Method**: `GET`  
+**Description**: Retrieves the details of a publisher by its ID.  
+**Query Parameter**:  
+- `id` (integer): The ID of the publisher.  
+**Response**: Returns a JSON object representing the Publisher.
+
+---
+
+#### Add a New Publisher  
+**URL**: `/library/publisher/add-publisher`  
+**Method**: `POST`  
+**Description**: Adds a new publisher to the system.  
+**Request Body**:  
+- A `Publisher` object containing the publisher's details.  
+**Response**: Returns the created Publisher object.
+
+---
+
+#### Update a Publisher  
+**URL**: `/library/publisher/update-publisher`  
+**Method**: `POST`  
+**Description**: Updates an existing publisher's details.  
+**Request Body**:  
+- A `Publisher` object containing the updated details.  
+**Response**: Returns the updated Publisher object.
+
+---
+
+#### Delete a Publisher by ID  
+**URL**: `/library/publisher/delete-publisher-by-id`  
+**Method**: `POST`  
+**Description**: Deletes a publisher by its ID.  
+**Query Parameter**:  
+- `id` (integer): The ID of the publisher to be deleted.  
+**Response**: None.
+
+---
+
+#### Delete All Publishers  
+**URL**: `/library/publisher/delete-all-publisher`  
+**Method**: `POST`  
+**Description**: Deletes all publishers in the system.  
+**Response**: None.
+
+---
+
+## Technologies Used
+
+- **Spring Boot**: Framework for building RESTful APIs.
+- **Java**: Programming language.
+- **Maven**: Build automation tool.
+
+---
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+
 
 
