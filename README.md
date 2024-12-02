@@ -27,9 +27,31 @@ Ensure the following are installed:
 - Maven 3.6+ or a compatible build system
 - PostgreSQL database
 
-## Setup Instructions
+1. Create a PostgreSQL database.
+2. Update the `application.properties` file with your database connection details:
+   ```properties
+   spring.datasource.url=jdbc:postgresql://localhost:5432/your_database_name
+   spring.datasource.username=your_username
+   spring.datasource.password=your_password
+   spring.jpa.hibernate.ddl-auto=update
+## Project Structure
 
-1. **Clone the Repository**
-   ```bash
-   git clone <repository-url>
-   cd IbrarySystem
+- `src/main/java`: Contains the Java source code.
+  - `controller`: REST API endpoints.
+  - `service`: Business logic.
+  - `repository`: Interfaces for database interaction using JPA.
+  - `model`: Entity classes mapping to database tables.
+- `src/main/resources`: Configuration files and static resources.
+  - `application.properties`: Contains database and application settings.
+- `src/test`: Unit and integration tests.
+
+## Dependencies
+
+Key dependencies used in this project are:
+
+- **Spring Boot Starter Data JPA**: For database operations and ORM.
+- **Spring Boot Starter Web**: For building REST APIs.
+- **PostgreSQL Driver**: To interact with PostgreSQL database.
+- **Lombok**: For reducing boilerplate code.
+- **Spring Boot DevTools**: For enhancing the development experience.
+
