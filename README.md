@@ -108,12 +108,12 @@ The following endpoints are available for managing authors in the library system
    - **Description:** Deletes all authors in the system.
    - **Response:** None.
    - 
-##Base URL
+## Base URL
 `/library/book/`
 ### Book
 
 #### Get All Books  
-**URL**: `/library/book/get-all-books`  
+**URL**: `/get-all-books`  
 **Method**: `GET`  
 **Description**: Retrieves a list of all books in the system.  
 **Response**: Returns a JSON array of Book objects.
@@ -121,7 +121,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Get Book by ID  
-**URL**: `/library/book/get-book-by-id`  
+**URL**: `/get-book-by-id`  
 **Method**: `GET`  
 **Description**: Retrieves the details of a book by its ID.  
 **Query Parameter**:  
@@ -131,7 +131,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Add a New Book  
-**URL**: `/library/book/add-book`  
+**URL**: `/add-book`  
 **Method**: `POST`  
 **Description**: Adds a new book to the system.  
 **Request Body**:  
@@ -145,7 +145,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Update a Book  
-**URL**: `/library/book/update-book`  
+**URL**: `/update-book`  
 **Method**: `POST`  
 **Description**: Updates an existing book's details.  
 **Request Body**:  
@@ -159,7 +159,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Delete a Book by ID  
-**URL**: `/library/book/delete-book-by-id`  
+**URL**: `/delete-book-by-id`  
 **Method**: `POST`  
 **Description**: Deletes a book by its ID.  
 **Query Parameter**:  
@@ -169,19 +169,19 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Delete All Books  
-**URL**: `/library/book/delete-all-book`  
+**URL**: `/delete-all-book`  
 **Method**: `POST`  
 **Description**: Deletes all books in the system.  
 **Response**: None.
 
 ---
-##Base URL
+## Base URL
 `/library/category/`
 
 ### Category
 
 #### Get All Categories  
-**URL**: `/library/category/get-all-categories`  
+**URL**: `/get-all-categories`  
 **Method**: `GET`  
 **Description**: Retrieves a list of all categories in the system.  
 **Response**: Returns a JSON array of Category objects.
@@ -189,7 +189,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Get Category by ID  
-**URL**: `/library/category/get-category-by-id`  
+**URL**: `/get-category-by-id`  
 **Method**: `GET`  
 **Description**: Retrieves the details of a category by its ID.  
 **Query Parameter**:  
@@ -199,7 +199,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Add a New Category  
-**URL**: `/library/category/add-category`  
+**URL**: `/add-category`  
 **Method**: `POST`  
 **Description**: Adds a new category to the system.  
 **Request Body**:  
@@ -209,7 +209,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Update a Category  
-**URL**: `/library/category/update-category`  
+**URL**: `/update-category`  
 **Method**: `POST`  
 **Description**: Updates an existing category's details.  
 **Request Body**:  
@@ -219,7 +219,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Delete a Category by ID  
-**URL**: `/library/category/delete-category-by-id`  
+**URL**: `/delete-category-by-id`  
 **Method**: `POST`  
 **Description**: Deletes a category by its ID.  
 **Query Parameter**:  
@@ -229,20 +229,20 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Delete All Categories  
-**URL**: `/library/category/delete-all-categories`  
+**URL**: `/delete-all-categories`  
 **Method**: `POST`  
 **Description**: Deletes all categories in the system.  
 **Response**: None.
 
 ---
 
-##Base URL
+## Base URL
 `/library/publisher/`
 
 ### Publisher
 
 #### Get All Publishers  
-**URL**: `/library/publisher/get-all-publishers`  
+**URL**: `/get-all-publishers`  
 **Method**: `GET`  
 **Description**: Retrieves a list of all publishers in the system.  
 **Response**: Returns a JSON array of Publisher objects.
@@ -250,7 +250,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Get Publisher by ID  
-**URL**: `/library/publisher/get-publisher-by-id`  
+**URL**: `/get-publisher-by-id`  
 **Method**: `GET`  
 **Description**: Retrieves the details of a publisher by its ID.  
 **Query Parameter**:  
@@ -260,7 +260,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Add a New Publisher  
-**URL**: `/library/publisher/add-publisher`  
+**URL**: `/add-publisher`  
 **Method**: `POST`  
 **Description**: Adds a new publisher to the system.  
 **Request Body**:  
@@ -270,7 +270,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Update a Publisher  
-**URL**: `/library/publisher/update-publisher`  
+**URL**: `/update-publisher`  
 **Method**: `POST`  
 **Description**: Updates an existing publisher's details.  
 **Request Body**:  
@@ -280,7 +280,7 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Delete a Publisher by ID  
-**URL**: `/library/publisher/delete-publisher-by-id`  
+**URL**: `/delete-publisher-by-id`  
 **Method**: `POST`  
 **Description**: Deletes a publisher by its ID.  
 **Query Parameter**:  
@@ -290,15 +290,15 @@ The following endpoints are available for managing authors in the library system
 ---
 
 #### Delete All Publishers  
-**URL**: `/library/publisher/delete-all-publisher`  
+**URL**: `/delete-all-publisher`  
 **Method**: `POST`  
 **Description**: Deletes all publishers in the system.  
 **Response**: None.
 
 ---
 
-#Future Enhancements
-##-Authentication and authorization for API endpoints.
-##-Improved validation for request payloads.
-##-Pagination for retrieving large data sets.
-##-Enhanced error handling with custom exception messages.
+# Future Enhancements
+-  Authentication and authorization for API endpoints.
+-  Improved validation for request payloads.
+-  Pagination for retrieving large data sets.
+-  Enhanced error handling with custom exception messages.
