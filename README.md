@@ -59,7 +59,7 @@ Key dependencies used in this project are:
 
 The following endpoints are available for managing authors in the library system:
 
-### Author
+## Author
 
 ### Base URL
 `/library/author`
